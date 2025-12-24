@@ -49,7 +49,7 @@ This structure allows the system to run autonomously with minimal logic complexi
 
 Arduino microcontroller
 
-DC motor with quadrature encoder
+DC motor with quadrature encoder (Polulu 4752)
 
 H-bridge motor driver
 
@@ -57,9 +57,13 @@ Limit switch for calibration
 
 12 V solenoid actuator
 
+MOSFET Transistor
+
 Toggle switch (enable/disable control)
 
 External button input signals
+
+Power Supply
 
 ## Control Parameters
 
