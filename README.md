@@ -2,7 +2,7 @@
 ## Overview
 
 This project implements the electronics and control system for an arcade-style button-pressing mechanism. This code was developed as part of a team-based mechanical engineering design project class at Columbia University focused on integrating mechanical design, manufacturing, electronics, and controls. My primary contributions included controls architecture design, PID tuning, state machine implementation, and system integration.The system uses a single DC motor with encoder feedback, a finite state machine, and closed-loop PID control to autonomously move a linkage to multiple button locations and actuate each button using a solenoid.
-The controller was designed to be fast, repeatable, and robust, enabling the mechanism to press illuminated buttons continuously under competition conditions.
+The controller was designed to be fast, repeatable, and robust, enabling the four bar linkage mechanism to press illuminated buttons continuously under competition conditions.
 
 
 ## System Architecture
