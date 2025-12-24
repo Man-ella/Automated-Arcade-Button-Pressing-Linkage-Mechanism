@@ -1,11 +1,11 @@
 # Automated-Arcade-Button-Pressing-Linkage-Mechanism
-Overview
+## Overview
 
 This project implements the electronics and control system for an arcade-style button-pressing mechanism. This code was developed as part of a team-based mechanical engineering design project class at Columbia University focused on integrating mechanical design, manufacturing, electronics, and controls. My primary contributions included controls architecture design, PID tuning, state machine implementation, and system integration.The system uses a single DC motor with encoder feedback, a finite state machine, and closed-loop PID control to autonomously move a linkage to multiple button locations and actuate each button using a solenoid.
 The controller was designed to be fast, repeatable, and robust, enabling the mechanism to press illuminated buttons continuously under competition conditions.
 
 
-System Architecture
+## System Architecture
 
 The control system is organized hierarchically:
 
@@ -17,7 +17,7 @@ Hardware interrupts are used for encoder position tracking to ensure reliable ve
 
 A solenoid actuator presses each button exactly once per cycle.
 
-Key Features:
+## Key Features:
 
 Finite State Machine with calibration, motion, and wait states
 
@@ -33,7 +33,7 @@ Real-time target selection based on button inputs
 
 Designed for high-speed, repeatable operation
 
-State Machine Description
+## State Machine Description
 
 The controller operates through the following states:
 
@@ -45,7 +45,7 @@ WAIT – Briefly holds position, actuates the solenoid once, and determines the 
 
 This structure allows the system to run autonomously with minimal logic complexity.
 
-Hardware Components:
+## Hardware Components:
 
 Arduino microcontroller
 
@@ -61,7 +61,7 @@ Toggle switch (enable/disable control)
 
 External button input signals
 
-Control Parameters:
+## Control Parameters:
 
 The PID gains and target positions were tuned experimentally to balance speed and accuracy:
 
@@ -71,7 +71,7 @@ Encoder counts are used as the primary position reference
 
 Anti-windup logic prevents controller saturation
 
-How to Run:
+## How to Run:
 
 Upload the code to an Arduino-compatible board
 
