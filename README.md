@@ -17,7 +17,7 @@ Hardware interrupts are used for encoder position tracking to ensure reliable ve
 
 A solenoid actuator presses each button exactly once per cycle.
 
-## Key Features:
+## Key Features
 
 Finite State Machine with calibration, motion, and wait states
 
@@ -45,7 +45,7 @@ WAIT – Briefly holds position, actuates the solenoid once, and determines the 
 
 This structure allows the system to run autonomously with minimal logic complexity.
 
-## Hardware Components:
+## Hardware Components
 
 Arduino microcontroller
 
@@ -61,7 +61,7 @@ Toggle switch (enable/disable control)
 
 External button input signals
 
-## Control Parameters:
+## Control Parameters
 
 The PID gains and target positions were tuned experimentally to balance speed and accuracy:
 
@@ -71,7 +71,7 @@ Encoder counts are used as the primary position reference
 
 Anti-windup logic prevents controller saturation
 
-## How to Run:
+## How to Run
 
 Upload the code to an Arduino-compatible board
 
@@ -80,3 +80,6 @@ Connect the motor, encoder, solenoid, and switches as defined in the pin assignm
 Power the system and enable the toggle switch
 
 The mechanism will automatically calibrate, detect active buttons, and begin operation
+
+## Contributors
+Kelsey Anthony, Raquel Conard, Sophya Elkihel, Yevgeniy Yesilevskiy
